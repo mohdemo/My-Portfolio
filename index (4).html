@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammed Mousa - Esports & Community Operations Specialist</title>
+<meta name="description" content="Mohammed Mousa - Esports and community operations specialist across PUBG Mobile's official MENA ecosystem. Tournament management, community growth, ambassador leadership, and bug tracking / QA.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2312140F'/%3E%3Ctext x='16' y='21' font-family='Arial' font-weight='700' font-size='13' fill='%23F2A900' text-anchor='middle'%3EMM%3C/text%3E%3C/svg%3E">
+
+<!--
+  ============================================================
+  HOW TO EDIT THIS FILE
+  ============================================================
+  1. All text content lives directly in the HTML below, edit it
+     like a normal document (Ctrl+F for the words you want to change).
+  2. All colors and fonts are defined once in the CSS variables
+     right below this comment (the ":root" block). Change a value
+     there and it updates everywhere automatically.
+  3. Sections are marked with capitalized labels in comments,
+     such as HERO, ZONE EXPANSION, ABOUT, EXPERIENCE TIMELINE,
+     so you can jump to the part you want with Ctrl+F.
+  4. To turn this into a real website: keep this file named
+     "index.html" and upload it (plus your CV file, same folder)
+     to any static host: Netlify, Vercel, GitHub Pages, etc.
+     Drag-and-drop the folder in, no build step needed.
+  5. The "Download CV" button saves the file as
+     "Mohammed_Moussa_CV.docx" no matter what the source file
+     is called. Upload your CV file (named to match, or update
+     the href/download values below) in the same folder.
+  ============================================================
+-->
+
+<style>
+  :root{
+    /* ---- COLORS: change these to re-theme the whole site ---- */
+    --bg:        #12140F;
+    --surface:   #181B13;
+    --surface-2: #1F2417;
+    --line:      #2B3122;
+    --amber:     #F2A900;
+    --amber-dim: #B8830A;
+    --teal:      #4FA6A0;
+    --text:      #EDEAE0;
+    --text-body: #C7CBB9;
+    --muted:     #8B9186;
+
+    /* ---- FONTS ---- */
+    --font-display: 'Oswald', 'Arial Narrow', sans-serif;
+    --font-body:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-mono:    'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+    --container: 1180px;
+    --radius: 10px;
+  }
+
+  *,*::before,*::after{ box-sizing:border-box; }
+  html{ scroll-padding-top:84px; }
+  @media (prefers-reduced-motion: no-preference){ html{ scroll-behavior:smooth; } }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text-body);
+    font-family:var(--font-body);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,h4{ color:var(--text); margin:0; font-weight:600; }
+  p{ margin:0; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; margin:0; padding:0; }
+  img{ max-width:100%; display:block; }
+
+  .container{
+    max-width:var(--container);
+    margin-inline:auto;
+    padding-inline:clamp(20px,5vw,56px);
+  }
+
+  section{ padding-block:clamp(56px,9vw,108px); }
+
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:.78rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--teal);
+    margin-bottom:14px;
+  }
+
+  /* visible keyboard focus everywhere */
+  a:focus-visible, button:focus-visible, label:focus-visible{
+    outline:2px solid var(--amber);
+    outline-offset:3px;
+    border-radius:3px;
+  }
+
+  .skip-link{
+    position:absolute; left:-999px; top:0; z-index:999;
+    background:var(--amber); color:#12140F; padding:10px 16px; border-radius:6px;
+  }
+  .skip-link:focus{ left:16px; top:16px; }
+
+  /* ===== reveal-on-scroll (progressive enhancement) ===== */
+  .reveal{
+    opacity:0; transform:translateY(18px);
+    transition:opacity .7s ease, transform .7s ease;
+  }
+  .reveal.in-view{ opacity:1; transform:translateY(0); }
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ opacity:1; transform:none; transition:none; }
+  }
+
+  /* ===== buttons ===== */
+  .btn{
+    display:inline-flex; align-items:center; gap:.5em;
+    padding:.85em 1.5em;
+    border-radius:999px;
+    font-family:var(--font-body); font-weight:600; font-size:.95rem;
+    border:1px solid transparent;
+    white-space:nowrap;
+  }
+  .btn-primary{ background:var(--amber); color:#141506; }
+  .btn-primary:hover{ background:#ffc02e; }
+  .btn-ghost{ border-color:var(--line); color:var(--text); background:transparent; }
+  .btn-ghost:hover{ border-color:var(--teal); color:var(--teal); }
+
+  /* ============================================================
+     NAV
+     ============================================================ */
+  .nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(18,20,15,.92);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-block:16px;
+  }
+  .nav-logo{
+    display:flex; align-items:baseline; gap:10px;
+    font-family:var(--font-mono); font-weight:700; color:var(--amber); font-size:.95rem;
+  }
+  .nav-logo span{
+    font-family:var(--font-body); font-weight:600; color:var(--text);
+    font-size:.95rem; letter-spacing:.02em;
+  }
+  .nav-links{
+    display:flex; align-items:center; gap:30px;
+    font-size:.92rem;
+  }
+  .nav-links a:hover{ color:var(--amber); }
+  .nav-links .nav-cta{
+    border:1px solid var(--amber); color:var(--amber);
+    padding:.5em 1.1em; border-radius:999px;
+  }
+  .nav-links .nav-cta:hover{ background:var(--amber); color:#141506; }
+
+  .nav-toggle-input{ position:absolute; opacity:0; pointer-events:none; }
+  .nav-toggle-label{
+    display:none; flex-direction:column; gap:5px; cursor:pointer;
+    padding:6px; margin:-6px;
+  }
+  .nav-toggle-label span{ width:22px; height:2px; background:var(--text); display:block; }
+
+  @media (max-width:860px){
+    .nav-toggle-label{ display:flex; }
+    .nav-links{
+      position:fixed; inset:65px 0 0 0; z-index:99;
+      background:var(--bg);
+      flex-direction:column; align-items:flex-start; gap:22px;
+      padding:36px clamp(20px,5vw,56px);
+      opacity:0; transform:translateY(-10px); pointer-events:none;
+      transition:opacity .25s ease, transform .25s ease;
+      overflow-y:auto;
+    }
+    .nav-toggle-input:checked ~ .nav-links{
+      opacity:1; transform:translateY(0); pointer-events:auto;
+    }
+    .nav-links a{ font-size:1.15rem; }
+  }
+
+  /* ============================================================
+     HERO
+     ============================================================ */
+  .hero{ position:relative; overflow:hidden; padding-block:clamp(70px,12vw,130px); }
+
+  .radar-wrap{
+    position:absolute; right:clamp(-160px,-4vw,0px); top:50%; transform:translateY(-50%);
+    width:min(560px,58vw); height:min(560px,58vw);
+    pointer-events:none;
+  }
+  .radar-ring{
+    position:absolute; border:1px solid rgba(79,166,160,.28); border-radius:50%;
+  }
+  .radar-ring.r1{ inset:0; }
+  .radar-ring.r2{ inset:14%; }
+  .radar-ring.r3{ inset:28%; }
+  .radar-ring.r4{ inset:42%; border-color:rgba(242,169,0,.35); }
+  .radar-sweep{
+    position:absolute; inset:0; border-radius:50%;
+    background:conic-gradient(from 0deg, transparent 0deg, rgba(242,169,0,.22) 30deg, transparent 70deg);
+    animation:spin 7s linear infinite;
+  }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce){ .radar-sweep{ animation:none; } }
+  @media (max-width:760px){ .radar-wrap{ display:none; } }
+
+  .hero-inner{ position:relative; max-width:760px; }
+  .hero h1{
+    font-family:var(--font-display); text-transform:uppercase;
+    font-size:clamp(2.6rem,7vw,4.6rem); line-height:.98; letter-spacing:.01em;
+    margin-bottom:18px;
+  }
+  .hero-role{
+    font-family:var(--font-display); color:var(--amber);
+    font-size:clamp(1.1rem,2.4vw,1.4rem); text-transform:uppercase; letter-spacing:.03em;
+    margin-bottom:20px;
+  }
+  .hero-bio{ font-size:1.08rem; max-width:56ch; margin-bottom:34px; }
+
+  .hero-actions{ display:flex; flex-wrap:wrap; align-items:center; gap:14px; margin-bottom:34px; }
+
+  .status-pill{
+    display:inline-flex; align-items:center; gap:9px;
+    font-family:var(--font-mono); font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+    color:var(--muted);
+  }
+  .status-pill .dot{
+    width:8px; height:8px; border-radius:50%; background:#59d98c;
+    box-shadow:0 0 0 0 rgba(89,217,140,.6);
+    animation:pulse 2.2s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(89,217,140,.55); }
+    70%{ box-shadow:0 0 0 8px rgba(89,217,140,0); }
+    100%{ box-shadow:0 0 0 0 rgba(89,217,140,0); }
+  }
+  @media (prefers-reduced-motion: reduce){ .status-pill .dot{ animation:none; } }
+
+  .hero-contact{ display:flex; flex-wrap:wrap; gap:22px; font-family:var(--font-mono); font-size:.86rem; color:var(--muted); }
+  .hero-contact a:hover{ color:var(--amber); }
+  .hero-contact .coords{ opacity:.65; margin-left:6px; }
+
+  /* ============================================================
+     ZONE EXPANSION (signature section)
+     ============================================================ */
+  .zone{ background:var(--surface); border-block:1px solid var(--line); }
+  .zone h2{
+    font-family:var(--font-display); font-weight:500; text-transform:none;
+    font-size:clamp(1.5rem,3.4vw,2.15rem); max-width:20ch; margin-bottom:48px;
+  }
+  .zone-list{ display:flex; flex-direction:column; gap:34px; }
+  .zone-top{ display:flex; align-items:baseline; justify-content:space-between; gap:16px; margin-bottom:12px; }
+  .zone-top h3{ font-family:var(--font-display); font-size:1.15rem; text-transform:uppercase; letter-spacing:.02em; }
+  .zone-badge{ font-family:var(--font-mono); color:var(--amber); font-size:.95rem; }
+  .zone-track{
+    position:relative; height:10px; border-radius:999px; background:var(--line); overflow:hidden;
+  }
+  .zone-fill{
+    position:absolute; inset:0; width:0;
+    border-radius:999px;
+    background:linear-gradient(90deg, var(--teal), var(--amber));
+    transition:width 1.3s cubic-bezier(.16,.8,.28,1);
+  }
+  .zone-item.in-view .zone-fill{ width:100%; }
+  .zone-nums{
+    display:flex; justify-content:space-between;
+    font-family:var(--font-mono); font-size:.82rem; color:var(--muted); margin-top:10px;
+  }
+  .zone-nums em{ font-style:normal; opacity:.7; }
+
+  /* ============================================================
+     ABOUT
+     ============================================================ */
+  .about-inner{ display:grid; grid-template-columns:1fr 1.5fr; gap:56px; align-items:start; }
+  .about h2{ font-family:var(--font-display); font-size:clamp(1.6rem,3.2vw,2.1rem); font-weight:500; }
+  .about-body p{ margin-bottom:16px; font-size:1.02rem; }
+  .about-body p:last-child{ margin-bottom:0; }
+  @media (max-width:760px){ .about-inner{ grid-template-columns:1fr; gap:20px; } }
+
+  /* ============================================================
+     ACHIEVEMENTS
+     ============================================================ */
+  .stats-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+  }
+  .stat-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:28px 24px;
+  }
+  .stat-number{
+    font-family:var(--font-mono); font-weight:700; color:var(--amber);
+    font-size:clamp(1.7rem,3.4vw,2.1rem); line-height:1;
+    margin-bottom:10px;
+  }
+  .stat-label{ color:var(--text-body); font-size:.92rem; max-width:26ch; }
+  @media (max-width:760px){ .stats-grid{ grid-template-columns:repeat(2,1fr); } }
+  @media (max-width:480px){ .stats-grid{ grid-template-columns:1fr; } }
+
+  /* ============================================================
+     EXPERIENCE TIMELINE
+     ============================================================ */
+  .timeline-group{ margin-bottom:44px; }
+  .timeline-group:last-child{ margin-bottom:0; }
+  .timeline-org{
+    font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.05em;
+    color:var(--teal); font-size:.82rem;
+    padding-bottom:10px; margin-bottom:22px; border-bottom:1px solid var(--line);
+  }
+  .timeline{
+    display:flex; flex-direction:column; gap:28px;
+    border-left:1px solid var(--line);
+    padding-left:28px;
+  }
+  .timeline-item{ position:relative; }
+  .timeline-item::before{
+    content:""; position:absolute; left:-32.5px; top:6px;
+    width:8px; height:8px; background:var(--amber);
+    transform:rotate(45deg);
+  }
+  .timeline-head{ display:flex; flex-wrap:wrap; align-items:baseline; gap:10px; margin-bottom:6px; }
+  .timeline-role{ font-family:var(--font-display); font-weight:500; font-size:1.1rem; color:var(--text); }
+  .timeline-date{ font-family:var(--font-mono); font-size:.78rem; color:var(--muted); }
+  .timeline-desc{ font-size:.96rem; max-width:66ch; }
+
+  /* ============================================================
+     SKILLS / LOADOUT
+     ============================================================ */
+  .skills-group{ margin-bottom:30px; }
+  .skills-group:last-child{ margin-bottom:0; }
+  .skills-group h3{
+    font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.06em;
+    font-size:.8rem; color:var(--muted); margin-bottom:16px;
+  }
+  .chip-row{ display:flex; flex-wrap:wrap; gap:10px; }
+  .chip{
+    font-family:var(--font-mono); font-size:.8rem; letter-spacing:.01em;
+    background:var(--surface-2); border:1px solid var(--line); color:var(--text-body);
+    padding:.6em 1.1em; border-radius:999px;
+  }
+
+  /* ============================================================
+     LANGUAGES & EDUCATION
+     ============================================================ */
+  .split-grid{ display:grid; grid-template-columns:1fr 1fr; gap:40px; }
+  .split-grid h3{
+    font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.06em;
+    font-size:.8rem; color:var(--teal); margin-bottom:16px;
+  }
+  .split-grid .row{ display:flex; justify-content:space-between; padding-block:10px; border-bottom:1px solid var(--line); font-size:.98rem; }
+  .split-grid .row span:last-child{ color:var(--muted); font-family:var(--font-mono); font-size:.85rem; }
+  @media (max-width:640px){ .split-grid{ grid-template-columns:1fr; gap:28px; } }
+
+  /* ============================================================
+     CONTACT / FOOTER
+     ============================================================ */
+  .contact{ text-align:center; background:var(--surface); border-top:1px solid var(--line); }
+  .contact h2{
+    font-family:var(--font-display); font-weight:500;
+    font-size:clamp(1.6rem,4vw,2.5rem); max-width:22ch; margin-inline:auto; margin-bottom:16px;
+  }
+  .contact p{ color:var(--muted); margin-bottom:36px; }
+  .contact .hero-actions{ justify-content:center; }
+
+  .footer{ padding-block:28px; border-top:1px solid var(--line); }
+  .footer-inner{
+    display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px;
+    font-family:var(--font-mono); font-size:.78rem; color:var(--muted);
+  }
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===== NAV ===== -->
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="#top">MM <span>Mohammed Mousa</span></a>
+
+    <input type="checkbox" id="navToggle" class="nav-toggle-input">
+    <label for="navToggle" class="nav-toggle-label" aria-label="Toggle menu"><span></span><span></span><span></span></label>
+
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#zone">Growth</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="radar-wrap" aria-hidden="true">
+      <div class="radar-ring r1"></div>
+      <div class="radar-ring r2"></div>
+      <div class="radar-ring r3"></div>
+      <div class="radar-ring r4"></div>
+      <div class="radar-sweep"></div>
+    </div>
+    <div class="container hero-inner">
+      <p class="eyebrow">Sitrep // MENA Esports Operations</p>
+      <h1>Mohammed<br>Mousa</h1>
+      <p class="hero-role">Esports &amp; Community Operations Specialist</p>
+      <p class="hero-bio">Three years leading community and tournament operations across PUBG Mobile's official MENA ecosystem, turning player feedback into shipped fixes and growing official communities to 500K+ combined members.</p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:ellorddemo1000@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="Mohammed_Moussa_CV.docx" download="Mohammed_Moussa_CV.docx">Download CV</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/demoo" target="_blank" rel="noopener">LinkedIn</a>
+        <span class="status-pill"><span class="dot"></span>Available for operations</span>
+      </div>
+
+      <ul class="hero-contact">
+        <li><a href="tel:+201281726655">+20 128 172 6655</a></li>
+        <li><a href="mailto:ellorddemo1000@gmail.com">ellorddemo1000@gmail.com</a></li>
+        <li>Alexandria, Egypt <span class="coords">31.20N 29.92E</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== ZONE EXPANSION (community growth) ===== -->
+  <section class="zone" id="zone">
+    <div class="container">
+      <p class="eyebrow">Zone Expansion</p>
+      <h2>In PUBG, the zone shrinks. Under this operation, it grew.</h2>
+
+      <div class="zone-list">
+        <div class="zone-item reveal">
+          <div class="zone-top"><h3>Egypt Server</h3><span class="zone-badge">+210%</span></div>
+          <div class="zone-track"><div class="zone-fill"></div></div>
+          <div class="zone-nums"><span>10,000 <em>start</em></span><span>31,000 <em>now</em></span></div>
+        </div>
+        <div class="zone-item reveal">
+          <div class="zone-top"><h3>Esports Server</h3><span class="zone-badge">+557%</span></div>
+          <div class="zone-track"><div class="zone-fill"></div></div>
+          <div class="zone-nums"><span>7,000 <em>start</em></span><span>46,000 <em>now</em></span></div>
+        </div>
+        <div class="zone-item reveal">
+          <div class="zone-top"><h3>Official MENA Server</h3><span class="zone-badge">+40%</span></div>
+          <div class="zone-track"><div class="zone-fill"></div></div>
+          <div class="zone-nums"><span>310,000 <em>start</em></span><span>435,000 <em>now</em></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div>
+        <p class="eyebrow">Profile</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-body">
+        <p>I work across staffing, tournament organization, community moderation, and player support within PUBG Mobile's official MENA esports ecosystem. My day to day covers organizing events, supervising a 70+ member ambassador team, and acting as the operational bridge between players and the technical development team, classifying and routing bug reports through to resolution.</p>
+        <p>I run reporting and feedback collection through Google Sheets and Forms, manage support through Discord ticket bots including one I built myself, and keep official WhatsApp, Telegram, and Discord channels organized and on guideline. My background in Marine Engineering shapes how I work: structured, methodical, and comfortable owning a problem end to end.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section class="achievements" id="achievements" style="background:var(--surface);border-block:1px solid var(--line);">
+    <div class="container">
+      <p class="eyebrow">After-Action Report</p>
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:40px;">Key Achievements</h2>
+      <div class="stats-grid">
+        <div class="stat-card reveal"><div class="stat-number">140+</div><div class="stat-label">Personal tournaments organized end to end</div></div>
+        <div class="stat-card reveal"><div class="stat-number">2,300+</div><div class="stat-label">Team registrations generated</div></div>
+        <div class="stat-card reveal"><div class="stat-number">250-300</div><div class="stat-label">Additional events supported across other servers</div></div>
+        <div class="stat-card reveal"><div class="stat-number">100+</div><div class="stat-label">Player feedback reports compiled across platforms</div></div>
+        <div class="stat-card reveal"><div class="stat-number">70+</div><div class="stat-label">Ambassadors led, trained, and mentored</div></div>
+        <div class="stat-card reveal"><div class="stat-number">Top Staff / Top Ambassador</div><div class="stat-label">Multiple-time award recipient</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE TIMELINE ===== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <p class="eyebrow">Deployment Log</p>
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:44px;">Experience</h2>
+
+      <div class="timeline-group">
+        <p class="timeline-org">PUBG Mobile MENA Community (Official Discord) - Remote - 3 yrs 3 mos</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Player #1 Team, Community Insights, QA &amp; Technical Support</span><span class="timeline-date">Jul 2025 - Present</span></div>
+            <p class="timeline-desc">Acts as engagement analyst for the region's Player #1 Team, turning social and community feedback into growth input. Primary bridge between players and the technical development team: classifies, documents, and escalates bugs through a dedicated bug-tracking system, and streamlined reporting channels to speed up patch deployment.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Ambassadors Supervisor</span><span class="timeline-date">Jan 2025 - Present</span></div>
+            <p class="timeline-desc">Leads, mentors, and supervises 70+ community ambassadors, and built the onboarding and training program that gets new ambassadors performing quickly. Uses Google Sheets to distribute tasks and track team and player data.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Staff, Community Support</span><span class="timeline-date">Dec 2024 - Present</span></div>
+            <p class="timeline-desc">Delivers technical and operational support across the MENA region through a self-built Discord ticket bot alongside the official ticketing system. Awarded Top Staff multiple times.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Egypt Ambassador</span><span class="timeline-date">May 2023 - Present</span></div>
+            <p class="timeline-desc">Independently organized and managed 140+ private community events reaching 2,300+ registered teams, handling registration, rule enforcement, and live management through Sheets, Forms, WhatsApp, and Discord. Grew the Egypt server from 10K to 31K members and was named Top Ambassador multiple times.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-group">
+        <p class="timeline-org">PUBG Mobile Egypt Community - Remote - 2 yrs 11 mos</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Staff</span><span class="timeline-date">Jun 2024 - Present</span></div>
+            <p class="timeline-desc">Helped organize 7 completed seasons of the community's PMCI Tournament and is now helping run Season 8, expanding its reach to all Egyptian teams.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Event Coordinator</span><span class="timeline-date">Sep 2023 - Jul 2026</span></div>
+            <p class="timeline-desc">Specialized in organizing on-ground, offline community events and gatherings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-group">
+        <p class="timeline-org">Other Official Communities</p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Staff, ESPORTS PUBGM MEA Community</span><span class="timeline-date">Apr 2025 - Present</span></div>
+            <p class="timeline-desc">Supports professional esports players and the wider community, scaling tournament participation to 1,000+ teams and growing the Esports server from 7K to 46K members.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Staff (Moderator), PUBG Mobile Somalia Community</span><span class="timeline-date">Apr 2026 - Present</span></div>
+            <p class="timeline-desc">Moderates official Discord channels in real time, enforcing guidelines and resolving conflicts.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-head"><span class="timeline-role">Staff, PUBG Mobile Metro Royal Community</span><span class="timeline-date">May 2026 - Present</span></div>
+            <p class="timeline-desc">Drives engagement for the in-game Metro Royal section through tailored events and moderation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS / TOOLS ===== -->
+  <section class="skills" id="skills" style="background:var(--surface);border-block:1px solid var(--line);">
+    <div class="container">
+      <p class="eyebrow">Loadout</p>
+      <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(1.5rem,3.2vw,2.1rem);margin-bottom:40px;">Skills &amp; Tools</h2>
+
+      <div class="skills-group">
+        <h3>Core Skills</h3>
+        <div class="chip-row">
+          <span class="chip">Tournament &amp; Event Management</span>
+          <span class="chip">Community Growth &amp; Engagement</span>
+          <span class="chip">Ambassador Team Leadership</span>
+          <span class="chip">Bug Tracking &amp; QA Coordination</span>
+          <span class="chip">Conflict Resolution &amp; Moderation</span>
+          <span class="chip">Bilingual Communication (Arabic/English)</span>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <h3>Tools &amp; Systems</h3>
+        <div class="chip-row">
+          <span class="chip">Google Sheets &amp; Forms</span>
+          <span class="chip">Discord Ticket Bots (self-built + official)</span>
+          <span class="chip">Company Bug-Tracking Platform</span>
+          <span class="chip">WhatsApp &amp; Telegram Management</span>
+          <span class="chip">Discord Server Administration</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LANGUAGES & EDUCATION ===== -->
+  <section class="langedu">
+    <div class="container split-grid">
+      <div>
+        <h3>Languages</h3>
+        <div class="row"><span>Arabic</span><span>Native</span></div>
+        <div class="row"><span>English</span><span>Professional</span></div>
+      </div>
+      <div>
+        <h3>Education</h3>
+        <div class="row"><span>Marine Engineering and Shipbuilding</span><span>Alexandria Univ.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="eyebrow" style="justify-content:center;display:flex;">Open Channel</p>
+      <h2>Open to esports operations, community, and tournament roles</h2>
+      <p>Based in Alexandria, Egypt. Available for remote or on-site opportunities across the region.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:ellorddemo1000@gmail.com">Email Me</a>
+        <a class="btn btn-ghost" href="tel:+201281726655">+20 128 172 6655</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/demoo" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p>Mohammed Mousa / Esports &amp; Community Operations Specialist</p>
+    <p>&copy; <span id="year"></span> - built to be edited, see comments in the source.</p>
+  </div>
+</footer>
+
+<!-- fallback: guarantee full visibility if JavaScript is unavailable -->
+<noscript><style>.reveal{opacity:1!important;transform:none!important;} .zone-fill{width:100%!important;}</style></noscript>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // sync aria-expanded on the mobile menu toggle (checkbox hack handles the show/hide itself)
+  var navToggle = document.getElementById('navToggle');
+  var navLabel = document.querySelector('.nav-toggle-label');
+  if (navToggle && navLabel) {
+    navLabel.setAttribute('aria-expanded', 'false');
+    navToggle.addEventListener('change', function () {
+      navLabel.setAttribute('aria-expanded', navToggle.checked ? 'true' : 'false');
+    });
+    document.querySelectorAll('.nav-links a').forEach(function (link) {
+      link.addEventListener('click', function () { navToggle.checked = false; });
+    });
+  }
+
+  // scroll-reveal
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+    revealEls.forEach(function (el) { io.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('in-view'); });
+  }
+</script>
+</body>
+</html>
